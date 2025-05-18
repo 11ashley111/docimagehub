@@ -21,8 +21,9 @@ jobs:
   
       - name: Install dependencies
         run: |
-          python3.9 -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip
+          pip install flask
+          pip install pytest
   
       - name: Run tests
         run: pytest
